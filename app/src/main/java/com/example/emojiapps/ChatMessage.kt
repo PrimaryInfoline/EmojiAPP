@@ -1,8 +1,9 @@
 package com.example.emojiapps
-
+import android.graphics.drawable.GradientDrawable
 data class ChatMessage(
-    val text: String,  // Текст сообщения
-    val backgroundColor: Int  // Цвет фона для облачка
+    val text: String,
+    val backgroundDrawable: GradientDrawable // Заменили цвет на GradientDrawable
 )
+
 
 

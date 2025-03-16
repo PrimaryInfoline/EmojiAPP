@@ -2,41 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="vertical">
 
     <!-- RecyclerView для отображения сообщений -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:importantForAccessibility="yes"
-        android:contentDescription="Список сообщений"
-        android:scrollbars="vertical" />
+        android:layout_weight="1" />
 
-    <!-- Поле ввода сообщения -->
-    <EditText
-        android:id="@+id/messageInput"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:hint="Введите сообщение"
-        android:importantForAccessibility="yes"
-        android:inputType="text"
-        android:padding="16dp" />
+        android:layout_height="wrap_content">
 
-    <!-- Кнопка отправки сообщения -->
-    <Button
-        android:id="@+id/sendButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Отправить"
-        android:importantForAccessibility="yes"
-        android:contentDescription="Кнопка для отправки сообщения"
-        android:layout_marginBottom="16dp"
-        android:padding="16dp" />
+        <!-- Поле для ввода сообщения -->
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp"
+            android:layout_toStartOf="@id/sendButton"
+            android:hint="Введите сообщение"
+            android:padding="10dp" />
+
+        <!-- Кнопка для отправки сообщений, расположена в правом углу -->
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:text="Отправить"
+            android:textSize="16sp" />
+    </RelativeLayout>
 
 </LinearLayout>
-
-
