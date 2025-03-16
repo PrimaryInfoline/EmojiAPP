@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:width="20dp" android:height="20dp"/>
+            <solid android:color="#FFD700"/> <!-- Желтые круги -->
+        </shape>
+    </item>
+    <item android:top="50dp" android:left="50dp">
+        <shape android:shape="oval">
+            <size android:width="40dp" android:height="40dp"/>
+            <solid android:color="#FFA500"/> <!-- Оранжевые круги -->
+        </shape>
+    </item>
+</layer-list>

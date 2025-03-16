@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:width="10dp" android:height="20dp"/>
+            <solid android:color="#6495ED"/> <!-- Голубые капли -->
+        </shape>
+    </item>
+    <item android:top="40dp" android:left="30dp">
+        <shape android:shape="oval">
+            <size android:width="8dp" android:height="18dp"/>
+            <solid android:color="#4169E1"/> <!-- Темно-синие капли -->
+        </shape>
+    </item>
+</layer-list>

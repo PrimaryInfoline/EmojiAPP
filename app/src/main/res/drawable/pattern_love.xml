@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:width="20dp" android:height="20dp"/>
+            <solid android:color="#FF1493"/> <!-- Яркие сердечки -->
+        </shape>
+    </item>
+    <item android:top="30dp" android:left="50dp">
+        <shape android:shape="oval">
+            <size android:width="16dp" android:height="16dp"/>
+            <solid android:color="#FF69B4"/> <!-- Бледно-розовые сердечки -->
+        </shape>
+    </item>
+</layer-list>

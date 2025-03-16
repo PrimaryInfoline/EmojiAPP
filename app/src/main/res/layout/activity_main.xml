@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- RecyclerView для отображения сообщений -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Список сообщений"
+        android:scrollbars="vertical" />
+
+    <!-- Поле ввода сообщения -->
+    <EditText
+        android:id="@+id/messageInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Введите сообщение"
+        android:importantForAccessibility="yes"
+        android:inputType="text"
+        android:padding="16dp" />
+
+    <!-- Кнопка отправки сообщения -->
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправить"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Кнопка для отправки сообщения"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp" />
+
+</LinearLayout>
+
+
